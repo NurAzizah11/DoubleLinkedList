@@ -13,5 +13,26 @@ namespace DoubleLinkedList
         public Node next;/*points to the succeeding node*/
         public Node prev;/*points to the preceeding node*/
     }
- 
+    class DoubleLinkedList
+    {
+        Node START;
+        public DoubleLinkedList()
+        {
+            START = null;
+        }
+        public void addNode()/*Add a new node*/
+        {
+            int rollNo;
+            string nm;
+            Console.Write("\nEnter the roll number of the student: ");
+            rollNo = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\nEnter the name of the students: ");
+            nm = Console.ReadLine();
+            Node newnode = new Node();
+            newnode.rollNumber = rollNo;
+            newnode.name = nm;
+            
+
+        }
+    }
 }

@@ -110,7 +110,7 @@ namespace DoubleLinkedList
             current.next.prev = previous;
             return true;
         }
-        
+
         public void traverse()/*Traverses the list*/
         {
 
@@ -127,7 +127,7 @@ namespace DoubleLinkedList
                         + currentNode.name + "\n");
             }
         }
-        
+
         /*traverses the list in the reverse direction*/
         public void revtraverse()
         {
@@ -148,6 +148,13 @@ namespace DoubleLinkedList
                     currentNode = currentNode.prev;
                 }
             }
+        }
+        public bool listEmpty()
+        {
+            if (START == null)
+                return true;
+            else
+                return false;
         }
     }
 }
